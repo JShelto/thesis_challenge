@@ -38,6 +38,7 @@ body {
   color: #FFF;
   margin: 0;
   padding: 20px;
+  min-width: 350px;
 }
 
 a {
@@ -50,6 +51,8 @@ a {
 }
 
 .main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ----- Header ----- */
@@ -92,10 +95,15 @@ img.menu-icon {
 
 
 .content-container {
+  text-align: center;
 }
 
 .headline-container {
+  text-align: left;
+}
 
+.headline-container div {
+  width: 350px;
 }
 
 .headline {
@@ -109,6 +117,8 @@ img.menu-icon {
 
 .form-container {
   text-align: center;
+  margin: 0 auto;
+  max-width: 350px;
 }
 
 .signup {
