@@ -50,7 +50,6 @@ a {
 }
 
 .main {
-
 }
 
 /* ----- Header ----- */
@@ -87,7 +86,10 @@ img.menu-icon {
 /* ----- Content----- */
 .content {
   display: grid;
+  justify-content: center;
+  grid-row-gap: 40px;
 }
+
 
 .content-container {
 }
@@ -111,7 +113,8 @@ img.menu-icon {
 
 .signup {
   border: 1px solid var(--LightGray);
-  border-radius: 2px
+  border-radius: 2px;
+  margin: 20px 0; 
 }
 
 .form-container input, .form-container button {
@@ -126,6 +129,7 @@ img.menu-icon {
 
 .form-container input {
   background:rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
 }
 
 .form-container input:nth-child(2){ 
@@ -146,6 +150,7 @@ img.menu-icon {
 @media screen and (min-width: 750px) {
   .content {
     grid-template-columns: 50% 50%;
+    grid-row-gap: 0;
   }
 
   .content-container {
