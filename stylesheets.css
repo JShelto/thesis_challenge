@@ -1,0 +1,27 @@
+:root {
+  --light-blue: #0094F3;
+  --light-gray: #616161;
+}
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(./roboto/Roboto-Regular.ttf);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto';
+  color: #FFF;
+}
