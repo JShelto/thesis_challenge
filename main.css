@@ -1,0 +1,167 @@
+:root {
+  --LightBlue: #0094F3;
+  --LightGray: #616161;
+}
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(./roboto/Roboto-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(./roboto/Roboto-Light.ttf);
+  font-weight: bold;
+}
+
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto-Light', sans-serif;
+  background-color: #000;
+  /* background-image: url(./public/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: #FFF;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.bold {
+  font-family: 'Roboto';
+}
+
+.main {
+
+}
+
+/* ----- Header ----- */
+
+.header {
+  display: grid;
+}
+
+.logo, .expand {
+  cursor: pointer;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.expand {
+  display: inline-block;
+  height: 17px;
+  float: right;
+}
+
+.expand span {
+  height:17px;
+  width:17px;
+}
+
+img.menu-icon {
+  height: 100%;
+}
+/* ----- Content----- */
+.content {
+  display: grid;
+}
+
+.content-container {
+}
+
+.headline-container {
+
+}
+
+.headline {
+  font-family: 'Roboto';
+  font-size: 3em;
+}
+
+.subheadline {
+  font-size: 1em;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.signup {
+  border: 1px solid var(--LightGray);
+  border-radius: 2px
+}
+
+.form-container input, .form-container button {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  color: #FFF;
+}
+
+.form-container input {
+  background:rgba(0, 0, 0, 0.5);
+}
+
+.form-container input:nth-child(2){ 
+  border-top: 1px solid var(--LightGray);
+  border-bottom: 1px solid var(--LightGray);
+}
+
+
+.form-container button {
+  background:var(--LightBlue);
+}
+
+/* ----- Footer ----- */
+.footer {
+  display: grid;
+}
+
+@media screen and (min-width: 750px) {
+  .content {
+    grid-template-columns: 50% 50%;
+  }
+
+  .content-container {
+    padding: 60px;
+  }
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+}
