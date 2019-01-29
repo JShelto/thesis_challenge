@@ -7,6 +7,7 @@
     <meta name="author" content="Joshua Shelto">
     <link rel="stylesheet" type="text/css" href="main.css" />
     <title>Stamp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -15,15 +16,24 @@
       </div>
       <div class=nav-container>
         <div class="header-nav">
-        <a href="#">About</a>
-        <a href="#">Integrations</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contacts</a>
+          <a href="#">About</a>
+          <a href="#">Integrations</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contacts</a>
         </div>
       </div>
       <div class="menu-container">
-        <div class="menu">
+        <div class="menu" id="menu-button">
           <span><img src="./public/menu_icon.png" class="menu-icon" /></span>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="close-button"><span id="close-button">X</span></div>
+        <div>
+          <a href="#">About</a>
+          <a href="#">Integrations</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contacts</a>
         </div>
       </div>
     </div>
@@ -62,5 +72,7 @@
       </div>
       <div class="copyright">&#169;2016 Stamp. All Rights Reserved</div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
