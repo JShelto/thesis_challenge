@@ -176,7 +176,6 @@ img.menu-icon {
   font-family: 'Roboto-Black';
   text-transform: uppercase;
   white-space: nowrap;
-  letter-spacing: 0.125em;
 }
 
 .copyright {
@@ -211,7 +210,11 @@ img.menu-icon {
   .footer-nav {
     grid-area: footer-nav;
   }
-  
+
+  .footer-link {
+    letter-spacing: 0.125em;
+  }
+
   .copyright {
     text-align: left;
     grid-area: copyright;
