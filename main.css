@@ -53,44 +53,44 @@ a {
   font-family: 'Roboto';
 }
 
-.main {
-  margin: 0 auto;
-  max-width: 350px;
-}
-
 /* ----- Header ----- */
 
 .header {
-  display: grid;
+  display: flex;
+  max-width: 1200px;
 }
 
-.logo, .expand {
+.header-base {
+  width: 100%;
+  text-align: center;
+}
+
+.logo, .menu {
   cursor: pointer;
 }
 
 .logo {
-  display: block;
-  position: relative;
-  font-size: 16px;
-  flex-grow: 1;
-}
-
-.expand {
   display: inline-block;
-  height: 17px;
-  float: right;
+  font-size: 1.875em;
 }
 
-.expand span {
-  height:17px;
-  width:17px;
+.menu {
+  height: 30px;
+  width: 30px;
+}
+
+.menu span {
+  height: 20px;
 }
 
 img.menu-icon {
   height: 100%;
 }
 /* ----- Content----- */
-
+.content {
+  margin: 0 auto;
+  max-width: 350px;
+}
 
 .content-container {
   text-align: center;
@@ -159,10 +159,12 @@ img.menu-icon {
 /* ----- Footer ----- */
 .footer {
   display: grid;
-  margin: 40px 0 20px 0;
+  margin: 40px auto 20px auto;
   width: 100%;
+  max-width: 350px;
   font-size: 0.750em;
   grid-row-gap: 20px;
+  
 }
 
 .footer-nav {
@@ -183,13 +185,10 @@ img.menu-icon {
 
 @media screen and (min-width: 750px) {
 
-  .main {
-    max-width: 1200px;
-  }
-
   .content {
     display: grid;
     height: 500px;
+    max-width: 1200px;
     justify-content: center;
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
@@ -201,6 +200,7 @@ img.menu-icon {
 
   .footer {
     padding: 0 20px;
+    max-width: 1200px;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
       "copyright footer-nav";
