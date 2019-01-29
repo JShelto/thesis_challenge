@@ -7,13 +7,16 @@
 @font-face {
   font-family: Roboto;
   src: url(./roboto/Roboto-Regular.ttf);
-  font-weight: bold;
 }
 
 @font-face {
   font-family: Roboto-Light;
   src: url(./roboto/Roboto-Light.ttf);
-  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(./roboto/Roboto-Black.ttf);
 }
 
 
@@ -51,8 +54,8 @@ a {
 }
 
 .main {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 350px;
 }
 
 /* ----- Header ----- */
@@ -87,11 +90,6 @@ img.menu-icon {
   height: 100%;
 }
 /* ----- Content----- */
-.content {
-  display: grid;
-  justify-content: center;
-  grid-row-gap: 40px;
-}
 
 
 .content-container {
@@ -175,8 +173,10 @@ img.menu-icon {
 }
 
 .footer-link {
-  justify-content: space-evenly;
+  font-family: 'Roboto-Black';
+  text-transform: uppercase;
   white-space: nowrap;
+  letter-spacing: 0.125em;
 }
 
 .copyright {
@@ -184,7 +184,14 @@ img.menu-icon {
 }
 
 @media screen and (min-width: 750px) {
+
+  .main {
+    max-width: 1200px;
+  }
+
   .content {
+    display: grid;
+    justify-content: center;
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
   }
@@ -196,7 +203,7 @@ img.menu-icon {
   .footer {
     position: fixed;
     padding: 0 20px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
       "copyright footer-nav";
   }
@@ -210,6 +217,13 @@ img.menu-icon {
     grid-area: copyright;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .footer {
+    grid-template-columns: 60% 40%;
+  }
+}
+
 
 ::placeholder {
   color: #fff;
