@@ -35,9 +35,9 @@ html {
 body {
   font-family: 'Roboto-Light', sans-serif;
   background-color: #000;
-  /* background-image: url(./public/bg_img.jpg);
+  background-image: url(./public/bg_img.jpg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   color: #FFF;
   margin: 0;
   padding: 20px;
@@ -58,11 +58,37 @@ a {
 .header {
   display: flex;
   max-width: 1200px;
+  height: 55px;
+  margin: 0 auto;
 }
 
-.header-base {
+.nav-container {
+  display: none;
+}
+
+.logo-container, .nav-container, .menu-container {
+  position: relative;
+}
+
+.logo-container {
   width: 100%;
-  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.875em;
+}
+
+.menu-container {
+  width: 55px;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .logo, .menu {
@@ -70,7 +96,6 @@ a {
 }
 
 .logo {
-  display: inline-block;
   font-size: 1.875em;
 }
 
@@ -129,7 +154,7 @@ img.menu-icon {
 .form-container input, .form-container button {
   display: block;
   width: 100%;
-  height: 30px;
+  height: 40px;
   margin: 0;
   box-sizing: border-box;
   border: none;
@@ -138,7 +163,7 @@ img.menu-icon {
 }
 
 .form-container input {
-  background:rgba(0, 0, 0, 0.5);
+  background:rgba(0, 0, 0, 0);
   padding-left: 10px;
 }
 
@@ -184,6 +209,32 @@ img.menu-icon {
 }
 
 @media screen and (min-width: 750px) {
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .logo-container {
+    width: 25%;
+  }
+
+  .nav-container {
+    display: block;
+    width: 50%;
+  }
+
+  .header-nav {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu-container {
+    width: 25%;
+  }
 
   .content {
     display: grid;
