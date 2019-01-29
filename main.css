@@ -94,6 +94,7 @@ img.menu-icon {
 
 .content-container {
   text-align: center;
+  margin: 40px 0;
 }
 
 .headline-container {
@@ -158,9 +159,7 @@ img.menu-icon {
 /* ----- Footer ----- */
 .footer {
   display: grid;
-  left: 0;
-  bottom: 0;
-  margin-top: 40px;
+  margin: 40px 0 20px 0;
   width: 100%;
   font-size: 0.750em;
   grid-row-gap: 20px;
@@ -190,6 +189,7 @@ img.menu-icon {
 
   .content {
     display: grid;
+    height: 500px;
     justify-content: center;
     grid-template-columns: 50% 50%;
     grid-row-gap: 0;
@@ -200,7 +200,6 @@ img.menu-icon {
   }
 
   .footer {
-    position: fixed;
     padding: 0 20px;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
